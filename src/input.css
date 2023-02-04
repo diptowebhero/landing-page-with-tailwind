@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
+}
+
+.btn {
+  @apply px-5 py-2 rounded duration-300 hover:hover:bg-[#FF4820];
+}
+.heroSection {
+  @apply min-h-[calc(100vh_-_120px)] flex items-center space-x-12 flex-col-reverse md:flex-row;
+}
+.qna {
+  @apply bg-[url('./../images/GPT-bg.png')] bg-no-repeat bg-cover bg-center container mx-auto text-white px-8 min-h-[600px] flex flex-col justify-center md:px-16 py-8 md:py-0;
+}
+.to-bar {
+  @apply before:content-[''] before:w-10 before:bg-gradient-to-r before:from-purple-400 before:to-pink-400 before:h-[2px] before:top-[-12px] before:absolute;
+}
+.cta-container {
+  @apply flex items-start justify-between flex-col px-8 py-5 space-y-4 md:items-center md:space-y-0 md:py-0 md:h-32 md:flex-row;
+}
+
+.blog-grid {
+  @apply grid grid-rows-2 grid-flow-row gap-4 mt-20 place-items-center md:grid-flow-col md:place-items-start;
+}
+
+body {
+  background-image: url("./../images/bg.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
+}
