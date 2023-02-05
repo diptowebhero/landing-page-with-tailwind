@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             </div>
 
             <!-- Button -->
-            <div class="space-x-5">
+            <div class="hidden md:block space-x-5">
                 <button class="btn">Sign In</button>
                 <button class="btn bg-[#FF4820]">Sign Up</button>
             </div>
@@ -42,7 +43,7 @@
         <div class="heroSection px-4">
             <!-- Items left -->
             <div class="space-y-5 w-full md:w-1/2 md:space-y-10">
-                <h1 class="text-gradient text-center md:text-left md:text-6xl text-5xl">
+                <h1 class="text-gradient text-center lg:text-left md:text-6xl text-5xl">
                     Let’s Build Something
                     amazing with GPT-3
                     OpenAI</h1>
@@ -104,7 +105,7 @@
     <!-- QNA section start -->
     <section id="qna" class="py-10">
         <div class="qna">
-            <div class="flex justify-between relative flex-col md:flex-row">
+            <div class="flex justify-between relative flex-col lg:flex-row">
                 <h4 class="to-bar w-full font-extrabold text-[22px]">
                     What is
                     GPT-3

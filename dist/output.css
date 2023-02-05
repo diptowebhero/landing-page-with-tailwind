@@ -574,10 +574,6 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
@@ -646,20 +642,8 @@ video {
   list-style-type: none;
 }
 
-.grid-flow-row {
-  grid-auto-flow: row;
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.place-items-center {
-  place-items: center;
 }
 
 .items-end {
@@ -676,10 +660,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -746,6 +726,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded {
@@ -947,6 +931,10 @@ video {
   transition-duration: 300ms;
 }
 
+.container {
+  width: 91.666667%;
+}
+
 .text-gradient {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #c084fc;
@@ -986,7 +974,7 @@ video {
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 976px) {
   .heroSection {
     flex-direction: row;
   }
@@ -1037,12 +1025,18 @@ video {
   padding-bottom: 2rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  width: 91.666667%;
 }
 
 @media (min-width: 768px) {
   .qna {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 976px) {
+  .qna {
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -1112,6 +1106,12 @@ video {
 
 @media (min-width: 768px) {
   .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 976px) {
+  .blog-grid {
     grid-auto-flow: column;
     place-items: start;
   }
@@ -1142,6 +1142,10 @@ body {
     margin-top: 10rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1170,16 +1174,8 @@ body {
     max-width: 172px;
   }
 
-  .md\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:place-items-start {
-    place-items: start;
   }
 
   .md\:items-center {
@@ -1247,5 +1243,15 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
